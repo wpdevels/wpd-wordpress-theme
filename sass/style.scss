@@ -1,0 +1,49 @@
+/*
+Theme Name: <Theme name>
+Author: <Author>
+Author URI: <Author URI>
+Description: Custom wordpres theme for <Project Name>
+Version: 1.0
+Text Domain: <domain>
+*/
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ *
+ * GENERIC
+ * Compass resets.......A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * FONTS
+ * Google Fronts........Import url google fonts
+ * Local Fronts.........Import local resource fonts
+ *
+ * BASE
+ * Headings, linkst.....H1..H6 styles, base styles.
+ *
+ * COMMON
+ * Common & helper......Helper classes and individual components.
+ *
+ * COMPONENTS
+ * Page head, nav.......The main page header.
+ *
+ * IE
+ * Class IE.............Fixed for Internet explorer
+ */
+
+
+@import "settings";
+@import "tools";
+@import "compass/reset";
+@import "fonts";
+@import "base";
+@import "grid";
+@import "common";
+@import "components";
+@import "ie";

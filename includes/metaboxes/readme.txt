@@ -1,0 +1,1 @@
+/* Include in this folder all the custom post types and taxonomies */

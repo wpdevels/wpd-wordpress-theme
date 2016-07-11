@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    # Grid system
+\*------------------------------------*/
+
+@import "susy";
+
+// Susy overwrite default conf
+
+$susy: (
+  columns: 12,
+  gutters: .45,
+  math: fluid,
+  gutter-position: inside,
+  container-position: center,
+  global-box-sizing: border-box,
+  container: $container
+);
