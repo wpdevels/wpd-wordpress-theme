@@ -1,5 +1,7 @@
 <?php
 
+defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
+
 /** Register Menus **/
 function register_menus(){
     register_nav_menus( array('main-menu' => 'Header menu for the theme.') );
