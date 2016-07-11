@@ -1,15 +1,12 @@
 var gulp = require('gulp');
-var compass = require('gulp-compass');
+var sass = require('gulp-sass');
+
 
 /* DEFAULT COMPASS */
-gulp.task('compass', function() {
-    gulp.src('./sass/**/*.scss')
-        .pipe(compass({
-            config_file: './config.rb',
-            css: 'stylesheets',
-            sass: 'sass'
-        }))
-        .pipe(gulp.dest('app/assets/temp'));
+gulp.task('sass', function () {
+    return gulp.src('./sass/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('.style.css'));
 });
 
 
