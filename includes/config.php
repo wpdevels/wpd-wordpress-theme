@@ -14,6 +14,7 @@ add_action('init', 'register_menus');
  */
 function remove_menus(){
 
+    /*
     if( is_admin() && !current_user_can( 'manage_options' )){
         remove_menu_page( 'index.php' );                  //Dashboard
         remove_menu_page( 'edit.php' );                   //Posts
@@ -25,7 +26,7 @@ function remove_menus(){
         remove_menu_page( 'users.php' );                  //Users
         remove_menu_page( 'tools.php' );                  //Tools
         remove_menu_page( 'options-general.php' );        //Settings
-    }
+    }*/
 
 }
 add_action( 'admin_menu', 'remove_menus' );
