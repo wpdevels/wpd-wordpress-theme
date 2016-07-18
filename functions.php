@@ -52,4 +52,34 @@ foreach (glob(__DIR__ . "/includes/metaboxes/*.php") as $filename)
     include $filename;
 
 
+
+
+/*
+*   ================================================================================================= 
+*   3RD PARTIES PLUGINS
+*   Include all the plugins you need in the 'includes/pluins/' folder and loaded them manually
+*   =================================================================================================
+*/
+function wpd_load_3rd_plugins() {
+    // Check to see if your plugin has already been loaded. This can be done in several
+	// ways - here are a few examples:
+	//
+	// Check for a class:
+	//	if (!class_exists('MyPluginClass')) {
+	//
+	// Check for a function:
+	//	if (!function_exists('my_plugin_function_name')) {
+	//
+	// Check for a constant:
+	//	if (!defined('MY_PLUGIN_CONSTANT')) {
+
+
+    /*if (!class_exists('PluginClassName')) {
+        include_once(TEMPLATEPATH.'plugins/my-plugin/my-plugin.php');
+    }*/
+    
+}
+add_action('after_setup_theme', 'wpd_load_3rd_plugins');
+
+
 ?>
